@@ -3,6 +3,10 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-image: url(https://images.template.net/434368/Hand-Drawn-Star-Clipart-edit-online.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 90px;
 }
 
 #main-page {
@@ -21,6 +25,8 @@ body {
   margin-left: -959.5px;
   z-index: -10;
 }
+
+
 
 .hover-img {
   opacity: 0;
@@ -70,5 +76,3 @@ body {
   margin: 0;
   padding: 5px 10px;
 }
-
-/* make a grid for where the greyed out tyler is so that when u hover, the image changes, also make that part of the grid a link to the next page */
