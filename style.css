@@ -1,26 +1,74 @@
 body {
-  background-image: url(igorfinal-1.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
   background-color: #f7b4c6;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 #main-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  width: 1919px;
+  height: 1079px;
+}
+
+.main-img > img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 1919px;
+  height: 1079px;
+  margin-top: -539.5px;
+  margin-left: -959.5px;
+  z-index: -10;
+}
+
+.hover-img {
+  opacity: 0;
+  z-index: 2;
+}
+
+.main-img:has(.hotspot:hover) .hover-img {
+  opacity: 1;
+}
+
+.main-img:has(.hotspot:hover) .nohover-img {
+  opacity: 0;
 }
 
 #main-page-title {
-  font-size: 12rem;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  position: fixed;
+  text-wrap: wrap;
+  text-align: right;
+  max-width: 600px;
+  padding: 0;
+  margin: 0 20px;
+  font-size: 130px;
+  bottom: 40%;
+  right: 0;
+  line-height: 0.9;
+}
+
+.hotspot {
+  position: absolute;
+  height: 300px;
+  width: 230px;
+  left: 36%;
+  top: 30%;
+  cursor: pointer;
+  display: block;
 }
 
 .bottom-text {
+  position: fixed;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  bottom: 0;
+  margin: 0;
+  padding: 5px 10px;
 }
-
 
 /* make a grid for where the greyed out tyler is so that when u hover, the image changes, also make that part of the grid a link to the next page */
