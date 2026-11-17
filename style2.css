@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-row {
+    /* justify-content: space-around; */
+    
+}
+
+.top-row > img {
+    margin-top: 20%;
+    padding: 10px;
+
+}
+
+.bottom-row {
+
+    
+}
