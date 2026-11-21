@@ -1,5 +1,6 @@
 body {
   overflow: hidden;
+  background: transparent;
 }
 
 .container {
@@ -20,41 +21,161 @@ body {
 }
 
 .line-break {
-  height: 20%;
+  height: 10%;
 }
 
 .bottom-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
+}
+
+p {
+  color: #ff0701;
 }
 
 /* For the igor portion of the teeth */
 
-.igor-text {
-  position: fixed;
-  top: 25%;
-  left: 27%;
-  letter-spacing: 50px;
+.igor {
+  position: relative;
+}
 
+.igor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  letter-spacing: -15px;
+  transform: translate(-50%, -50%);
   padding: 0;
   margin: 0;
-  height: fit-content;
-  width: fit-content;
   font-size: 100px;
   opacity: 0;
   z-index: 10;
+  text-align: center;
 }
 
 .igor:hover {
-  background: url(https://i.pinimg.com/1200x/86/44/34/86443497fe9686de277044ecd0b69b03.jpg);
+  background: url(https://voxatl.org/nitropack_static/mOykIDoQmonltPBLACsOGAfTGRvLKsvB/assets/images/optimized/rev-d2570f6/i0.wp.com/voxatl.org/wp-content/uploads/a762c5945d8893c6a2f21fa9195e8dd9.IMG_3617-1.jpeg);
   background-size: cover;
-  background-position-y: 25%;
+  background-position-y: 30%;
 }
 
 .igor:hover > .igor-text {
   opacity: 1;
+}
+
+.igor:hover > img {
+  filter: brightness(0);
+}
+
+/* section for CMIYGL */
+
+.cmiygl {
+  position: relative;
+}
+
+.cmiygl-text {
+  position: absolute;
+  text-wrap: nowrap;
+  top: 50%;
+  left: 50%;
+  letter-spacing: -5px;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  font-size: 45px;
+  opacity: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+.cmiygl:hover {
+  background: url(https://api.floodmagazine.com/wp-content/uploads/2021/06/Cover-2048x1315.jpg);
+  background-size: cover;
+  background-position-y: 40%;
+}
+
+.cmiygl:hover > .cmiygl-text {
+  opacity: 1;
+}
+
+.cmiygl:hover > img {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(26%) saturate(4462%)
+    hue-rotate(170deg) brightness(100%) contrast(100%);
+}
+
+/* section for flowerboy */
+
+.flowerboy {
+  position: relative;
+}
+
+.flowerboy-text {
+  position: absolute;
+  text-wrap: nowrap;
+  top: 50%;
+  left: 50%;
+  letter-spacing: -5px;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  font-size: 90px;
+  opacity: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+.flowerboy:hover {
+  background: url(https://voxatl.org/nitropack_static/mOykIDoQmonltPBLACsOGAfTGRvLKsvB/assets/images/optimized/rev-d2570f6/i0.wp.com/voxatl.org/wp-content/uploads/1c08cba7df611d749b940ed6ef973384.100000x100000-999-1.jpg);
+  background-size: cover;
+  background-position-y: 20%;
+}
+
+.flowerboy:hover > .flowerboy-text {
+  opacity: 1;
+}
+
+.flowerboy:hover > img {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(14%) saturate(1917%)
+    hue-rotate(29deg) brightness(96%) contrast(95%);
+}
+
+/* section for chromakopia */
+
+.chromakopia {
+  position: relative;
+}
+
+.chromakopia-text {
+  position: absolute;
+  text-wrap: nowrap;
+  top: 50%;
+  left: 50%;
+  letter-spacing: -5px;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  font-size: 75px;
+  opacity: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+.chromakopia:hover {
+  background: url(https://news.artnet.com/app/news-upload/2024/10/tyler-creator-chromakopia-album-1024x1024.jpg);
+  background-size: cover;
+  background-position-y: 35%;
+}
+
+.chromakopia:hover > .chromakopia-text {
+  opacity: 1;
+}
+
+.chromakopia:hover > img {
+  filter: brightness(0) saturate(100%) invert(36%) sepia(18%) saturate(2531%)
+    hue-rotate(102deg) brightness(97%) contrast(99%);
 }
 
 img {
@@ -64,10 +185,10 @@ img {
 p {
   padding: 0;
   margin: 0;
-  height: fit-content;
-  width: fit-content;
 }
 
+/* have it s */
 /* make it so when you hover over a set of teeth, the div background changes to the album cover of the album */
 /* also make it so that the other teeth change to the color pertaining to the album */
 /* make teeth go trasnparent when they are hovered over */
+/* see what it looks like to have a container outline for the different albums when not hovering */
