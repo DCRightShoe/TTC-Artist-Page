@@ -3,6 +3,15 @@ body {
   background: transparent;
 }
 
+/* a {
+  display: block;
+  position: fixed;
+  cursor: pointer;
+  width:fit-content;
+  z-index: 50;
+  border: red solid 2px;
+} */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -40,6 +49,8 @@ p {
 
 .igor {
   position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 
 .igor-text {
@@ -74,6 +85,8 @@ p {
 
 .cmiygl {
   position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 
 .cmiygl-text {
@@ -110,6 +123,8 @@ p {
 
 .flowerboy {
   position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 
 .flowerboy-text {
@@ -146,6 +161,8 @@ p {
 
 .chromakopia {
   position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 
 .chromakopia-text {

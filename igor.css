@@ -1,0 +1,72 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(asd.jpg);
+    background-size: cover;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+
+h1 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 10;
+    padding: 0;
+    font-size: 100px;
+}
+
+h2 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 10;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 40px 0px;
+    
+}
+
+#tracklist {
+    order: 1;
+    padding:  40px 25px;
+    border: solid black 6px;
+    justify-content: flex-end;
+    /* align-self:flex-start; */
+    margin: 40px;
+    font-size: 25px;
+    background-color: #f7b4c6;
+}
+
+#bottom-text {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+    width: 600px;
+    height: fit-content;
+}
+
+#teeth {
+    display: flex;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}

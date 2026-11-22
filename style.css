@@ -68,11 +68,11 @@ body {
 
 .bottom-text {
   position: fixed;
-  font-size: 14px;
-  text-align: center;
+  font-size: 15px;
+  text-align: left;
   font-family: "Courier New", Courier, monospace;
   color: white;
   bottom: 0;
   margin: 0;
-  padding: 5px 10px;
+  padding: 5px 25px;
 }
